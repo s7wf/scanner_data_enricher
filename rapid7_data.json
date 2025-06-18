@@ -1,0 +1,59 @@
+{
+  "scan_id": "scan-_234567_Z",
+  "scan_timestamp": "2024-09-15T14:30:00Z",
+  "assets": [
+    {
+      "asset_id": "asset-101",
+      "ip_address": "198.51.100.24",
+      "hostname": "webserver01.example.com",
+      "os": "Linux Ubuntu 22.04",
+      "mac_address": "00:1B:44:11:3A:B7",
+      "vulnerabilities": [
+        {
+          "vulnerability_id": "vuln-9987",
+          "cve_id": "CVE-2023-4567",
+          "title": "Apache HTTP Server Path Traversal",
+          "description": "A path traversal vulnerability in Apache HTTP Server allows an attacker to read files outside the root directory.",
+          "cvss_base_score": 7.5,
+          "port": 443,
+          "protocol": "TCP"
+        },
+        {
+          "vulnerability_id": "vuln-9988",
+          "cve_id": "CVE-2022-31813",
+          "title": "OpenSSH Username Enumeration",
+          "description": "A vulnerability in some versions of OpenSSH allows remote attackers to enumerate valid usernames.",
+          "cvss_base_score": 5.3,
+          "port": 22,
+          "protocol": "TCP"
+        }
+      ]
+    },
+    {
+      "asset_id": "asset-102",
+      "ip_address": "203.0.113.50",
+      "hostname": "db-server.internal.corp",
+      "os": "Windows Server 2019",
+      "mac_address": "00:1A:2B:3C:4D:5E",
+      "vulnerabilities": [
+        {
+          "vulnerability_id": "vuln-7654",
+          "cve_id": "CVE-2021-34527",
+          "title": "Windows Print Spooler Remote Code Execution (PrintNightmare)",
+          "description": "A critical remote code execution vulnerability exists in the Windows Print Spooler service.",
+          "cvss_base_score": 8.8,
+          "port": 445,
+          "protocol": "TCP"
+        }
+      ]
+    },
+    {
+      "asset_id": "asset-103",
+      "ip_address": "192.168.1.100",
+      "hostname": "dev-workstation-05",
+      "os": "macOS Sonoma",
+      "mac_address": "AC:BC:32:78:9A:BC",
+      "vulnerabilities": []
+    }
+  ]
+}
